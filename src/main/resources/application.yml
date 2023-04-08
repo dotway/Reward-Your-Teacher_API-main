@@ -1,0 +1,40 @@
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: TRACE
+server:
+  port: 9001
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rewardyourteacher_db
+<<<<<<< HEAD
+    password: 123456789
+=======
+    password: Tiamiyu1995
+>>>>>>> 39a981d8dd17f42f152a236843a97f67e84f9cc6
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL94Dialect
+        format_sql: true
+    show-sql: false
+  main:
+    allow-circular-references: true
+  servlet:
+    multipart:
+      enabled: true
+springdoc:
+  swagger-ui:
+    path: /api-docs
+application:
+  jwt:
+    adminKey: passwordpasswordpasswordpasswordpasswordpasswordpasswordpassword
+    expiry: 1800
